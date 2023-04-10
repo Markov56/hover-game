@@ -1,0 +1,45 @@
+.wrapper {
+  position: relative;
+}
+
+.valueContainer {
+  width: 200px;
+  padding: 8px 12px;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: white;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid black;
+  }
+}
+
+.menu {
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 200px;
+  padding: 8px 12px;
+  position: absolute;
+  margin-top: 12px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}

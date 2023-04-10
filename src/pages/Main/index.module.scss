@@ -1,0 +1,63 @@
+.wrapper {
+  padding: 40px 60px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  gap: 128px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.button {
+  height: 34px;
+  border-radius: 8px;
+  background-color: royalblue;
+  width: 200px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+
+  .tooltip {
+    position: absolute;
+    bottom: -40px;
+    left: 20px;
+    width: 150px;
+    border: 1px solid black;
+    display: none;
+    background-color: white;
+    color: black;
+  }
+
+  &:hover:disabled {
+    .tooltip {
+      display: block;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.right {
+  width: 100%;
+
+  .header {
+    font-size: 32px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: calc(100vh - 136px);
+  overflow-y: scroll;
+  width: 100%;
+}
