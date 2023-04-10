@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hover-game/static/css/main.9714892b.css",
+    "main.js": "/hover-game/static/js/main.9561f37b.js",
+    "index.html": "/hover-game/index.html",
+    "main.9714892b.css.map": "/hover-game/static/css/main.9714892b.css.map",
+    "main.9561f37b.js.map": "/hover-game/static/js/main.9561f37b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9714892b.css",
+    "static/js/main.9561f37b.js"
+  ]
+}
